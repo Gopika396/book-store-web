@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #11152e;
+  background: #f7f7fc;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f7f7fc;
+  color: #11152e;
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3, h4, .orbit-brand {
+  font-family: 'Outfit', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.orbit-nav {
+  background: #10122f;
+  padding: 15px 0;
+  border-bottom: 1px solid #29274c;
+}
+
+.orbit-brand {
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.orbit-brand:hover {
+  color: #ff762f;
+}
+
+.orbit-nav .nav-link {
+  color: #f3f1ff;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.orbit-nav .nav-link:hover {
+  color: #ff762f;
+}
+
+.orbit-nav .navbar-toggler {
+  border-color: #8b87b2;
+}
+
+.orbit-nav .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Homepage hero: deliberately separated from navbar */
+
+.orbit-hero {
+  margin-top: 30px;
+  background: linear-gradient(115deg, #10122f, #28125b 65%, #43308a);
+  color: white;
+  overflow: hidden;
+}
+
+.orbit-hero h1 {
+  font-size: clamp(45px, 6vw, 72px);
+  font-weight: 800;
+  line-height: 1.03;
+  margin: 18px 0;
+}
+
+.orbit-hero h1 span {
+  color: #ff762f;
+}
+
+.orbit-hero p {
+  color: #e0def4;
+  max-width: 430px;
+  line-height: 1.8;
+}
+
+.orbit-eyebrow {
+  color: #ff762f;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.orbit-hero-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px 0 0 12px;
+}
+
+.orbit-btn {
+  background: #ff6b27;
+  color: white;
+  border: 1px solid #ff6b27;
+  border-radius: 6px;
+  padding: 11px 20px;
+  font-weight: 600;
+  transition: .25s;
+}
+
+.orbit-btn:hover {
+  background: #e95113;
+  border-color: #e95113;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Shopping benefits */
+
+.orbit-benefits {
+  background: white;
+  padding: 22px 0;
+  border-bottom: 1px solid #e9e8f1;
+}
+
+.orbit-benefits .row > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.orbit-benefits i {
+  font-size: 25px;
+  color: #34266f;
+}
+
+.orbit-benefits strong {
+  font-size: 13px;
+}
+
+.orbit-benefits p {
+  margin: 4px 0 0;
+  font-size: 11px;
+  color: #777990;
+}
+
+/* Section headings */
+
+.orbit-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.orbit-section-heading h2 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.orbit-section-heading a {
+  color: #e95113;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.orbit-section-heading > span {
+  color: #777990;
+  font-size: 13px;
+}
+
+/* Categories */
+
+.orbit-category {
+  min-height: 100px;
+  border-radius: 9px;
+  padding: 18px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #11152e;
+  text-align: center;
+  transition: .25s;
+}
+
+.orbit-category i {
+  font-size: 30px;
+}
+
+.orbit-category strong {
+  font-size: 12px;
+}
+
+.orbit-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px #10122f18;
+}
+
+.orbit-purple { background: #d9c6ff; }
+.orbit-blue { background: #bce7ff; }
+.orbit-yellow { background: #ffe58b; }
+.orbit-dark { background: #242447; color: white; }
+.orbit-pink { background: #ffc9df; }
+.orbit-cyan { background: #b5f0f1; }
+.orbit-orange { background: #ffd2ae; }
+.orbit-lilac { background: #e8c9ff; }
+
+/* Book cards */
+
+.orbit-book-card {
+  height: 100%;
+  background: white;
+  border: 1px solid #e7e6f0;
+  border-radius: 9px;
+  overflow: hidden;
+  transition: .25s;
+}
+
+.orbit-book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px #15153c14;
+}
+
+.orbit-book-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  padding: 14px;
+  background: #f0eff7;
+}
+
+.orbit-book-card h5,
+.orbit-book-card h6 {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.orbit-book-card p {
+  color: #777990;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.orbit-book-card strong {
+  color: #171638;
+}
+
+.orbit-book-genre {
+  display: inline-block;
+  padding: 5px 9px;
+  background: #e9e3ff;
+  color: #5635a2;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Promotional banner */
+
+.orbit-offer {
+  background: linear-gradient(110deg, #17133f, #2b155b);
+  color: white;
+}
+
+.orbit-offer h2 {
+  font-size: clamp(35px, 5vw, 55px);
+  font-weight: 800;
+  margin: 12px 0;
+}
+
+.orbit-offer p {
+  color: #e0def4;
+}
+
+.orbit-gift {
+  color: #ff762f;
+  font-size: 115px;
+}
+
+/* Other page hero */
+
+.orbit-page-hero {
+  margin-top: 30px;
+  padding: 65px 20px;
+  text-align: center;
+  background: linear-gradient(115deg, #151538, #35206f);
+  color: white;
+}
+
+.orbit-page-hero h1 {
+  font-size: clamp(35px, 5vw, 56px);
+  font-weight: 800;
+  margin: 14px 0;
+}
+
+.orbit-page-hero p {
+  color: #e0def4;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* About and author pages */
+
+.orbit-about-img,
+.orbit-author-img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.orbit-info-card {
+  height: 100%;
+  padding: 30px 20px;
+  border: 1px solid #e5e4f1;
+  background: white;
+  border-radius: 10px;
+}
+
+.orbit-info-card i {
+  color: #7449c8;
+  font-size: 34px;
+}
+
+.orbit-info-card h4 {
+  margin: 15px 0;
+}
+
+.orbit-info-card p {
+  color: #777990;
+  margin-bottom: 0;
+}
+
+.orbit-author-subtitle {
+  color: #7449c8;
+  font-weight: 700;
+}
+
+.orbit-author-card {
+  height: 100%;
+  background: white;
+  border: 1px solid #e5e4f1;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: .25s;
+}
+
+.orbit-author-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px #15153c14;
+}
+
+.orbit-author-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  padding: 15px;
+  background: #f0eff7;
+}
+
+.orbit-author-card p {
+  color: #777990;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.orbit-author-card strong {
+  font-size: 13px;
+}
+
+.orbit-author-banner {
+  padding: 40px;
+  background: #e9e3ff;
+  border-radius: 12px;
+}
+
+.orbit-author-banner h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-top: 12px;
+}
+
+.orbit-author-banner p {
+  color: #555570;
+  max-width: 600px;
+  line-height: 1.8;
+}
+
+/* Contact form */
+
+.orbit-form {
+  background: white;
+  border: 1px solid #e5e4f1;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.orbit-form label {
+  display: block;
+  margin: 15px 0 7px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.orbit-form .form-control,
+.orbit-form .form-select {
+  padding: 12px;
+  border-color: #dcdbea;
+}
+
+.orbit-form .form-control:focus,
+.orbit-form .form-select:focus {
+  border-color: #7449c8;
+  box-shadow: 0 0 0 3px #7449c818;
+}
+
+.orbit-contact-detail {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  margin-top: 25px;
+}
+
+.orbit-contact-detail > i {
+  font-size: 24px;
+  color: #7449c8;
+}
+
+.orbit-contact-detail h6 {
+  font-weight: 700;
+}
+
+.orbit-contact-detail p {
+  color: #777990;
+  margin-bottom: 0;
+}
+
+/* Cart */
+
+.orbit-empty {
+  padding: 60px 15px;
+  background: white;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.orbit-empty i {
+  color: #7449c8;
+  margin-bottom: 20px;
+}
+
+.orbit-cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 18px;
+  margin-bottom: 15px;
+  background: white;
+  border: 1px solid #e5e4f1;
+  border-radius: 10px;
+}
+
+.orbit-cart-item img {
+  width: 75px;
+  height: 100px;
+  object-fit: contain;
+  background: #f0eff7;
+}
+
+.orbit-cart-item p {
+  color: #777990;
+  margin-bottom: 5px;
+}
+
+.orbit-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 10px;
+  background: #e9e3ff;
+}
+
+/* Footer */
+
+.orbit-footer {
+  background: #10122f;
+  color: white;
+  padding: 45px 0 22px;
+  margin-top: 25px;
+}
+
+.orbit-footer h4 {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.orbit-footer h6 {
+  color: #ff9a68;
+  margin-bottom: 15px;
+}
+
+.orbit-footer p {
+  color: #c9c8dc;
+  font-size: 14px;
+}
+
+.orbit-footer a:hover {
+  color: #ff762f;
+}
+
+.orbit-footer hr {
+  border-color: #ffffff35;
+}
+
+.orbit-social {
+  display: flex;
+  gap: 17px;
+  justify-content: inherit;
+  font-size: 20px;
+}
+
+/* Tablet */
+
+@media (max-width: 991px) {
+  .orbit-nav .navbar-nav {
+    padding-top: 10px;
+  }
+
+  .orbit-hero-img {
+    height: 280px;
+    border-radius: 10px;
+  }
+
+  .orbit-benefits .row > div {
+    justify-content: flex-start;
+  }
+
+  .orbit-book-card img {
+    height: 200px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+  .orbit-nav .container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .orbit-nav .navbar-brand {
+    margin-right: 0;
+  }
+
+  .orbit-nav .navbar-toggler {
+    margin-left: 10px;
+  }
+
+  .orbit-nav .navbar-collapse .navbar-nav {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .orbit-hero {
+    margin-top: 25px;
+  }
+
+  .orbit-hero h1 {
+    font-size: 46px;
+  }
+
+  .orbit-hero-img {
+    height: 240px;
+    margin-bottom: 20px;
+  }
+
+  .orbit-benefits .row > div {
+    justify-content: center;
+  }
+
+  .orbit-book-card img {
+    height: 180px;
+  }
+
+  .orbit-section-heading {
+    align-items: flex-start;
+  }
+
+  .orbit-cart-item {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .orbit-cart-item img {
+    width: 58px;
+    height: 78px;
+  }
+
+  .orbit-cart-item h5 {
+    font-size: 15px;
+  }
+
+  .orbit-total {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .orbit-author-banner {
+    padding: 25px;
+  }
+
+  .orbit-author-banner h2 {
+    font-size: 31px;
+  }
+
+  .orbit-footer,
+  .orbit-footer .row,
+  .orbit-footer .row > div {
+    text-align: center !important;
+  }
+
+  .orbit-social {
+    justify-content: center;
+  }
+}
+/* ===== Image fixes (added) ===== */
+
+/* Category cards with images */
+.orbit-category img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Banner under page headings (no overlap with text) */
+.orbit-banner-img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 30px auto 0;
+  border-radius: 12px;
+}
+
+.orbit-banner-flat {
+  margin-top: 0;
+}
+
+/* Offer banner */
+.orbit-offer-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .orbit-category img {
+    height: 70px;
+  }
+}
